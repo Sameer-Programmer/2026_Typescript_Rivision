@@ -1,0 +1,16 @@
+1) To Install the TypeScript globally 
+npm  install -g typeScript
+
+To Run the TypeScript files Directly 
+npm  install -g tsx
+
+3) to Run the typescript In console 
+
+tsx filename.ts
+
+
+What is Hoisting -> Moving Declarations to the top of their scope
+What is TDZ → Time between hoisting and initialization
+ where variables (let, const) cannot be accessed
+
+ String + anything → String concatenation (for the + operator).
