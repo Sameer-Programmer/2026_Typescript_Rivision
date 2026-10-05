@@ -1,10 +1,38 @@
 # 2026 TypeScript Revision
 
+<div align="center">
+
+**A colorful, hands-on path from TypeScript fundamentals to problem-solving**
+
+[![TypeScript](https://img.shields.io/badge/TypeScript-7.0.2-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-required-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Exercises](https://img.shields.io/badge/exercises-29-8A2BE2?logo=checkmarx&logoColor=white)](#exercise-catalogue)
+[![Status](https://img.shields.io/badge/status-active-learning-00A67E?logo=bookstack&logoColor=white)](#repository-status)
+
+<br />
+
+`🧱 Foundations`  ·  `🧠 Logic`  ·  `🔁 Loops`  ·  `➗ Mathematics`
+
+</div>
+
+> **Revision goal:** build strong TypeScript fundamentals by solving one focused problem at a time.
+
 A structured collection of **29 standalone TypeScript exercises** for revising programming fundamentals, data types, conditional statements, loops, and basic mathematical problem-solving.
 
 The exercises are intentionally small and focused. Each file demonstrates one concept and can be compiled or executed independently.
 
-## Learning objectives
+## 🧭 Quick navigation
+
+| Section | What you will find |
+|---|---|
+| [📚 Learning objectives](#-learning-objectives) | Skills practiced throughout the revision |
+| [🗂️ Project structure](#️-project-structure) | Folder map and exercise distribution |
+| [🚀 Getting started](#-getting-started) | Install, run, and type-check commands |
+| [🧩 Exercise catalogue](#-exercise-catalogue) | Detailed notes for all 29 exercises |
+| [🗺️ Learning flows](#️-learning-flows) | Visual progression and decision flows |
+| [✅ Suggested revision order](#-suggested-revision-order) | A practical study sequence |
+
+## 📚 Learning objectives
 
 By completing this revision project, you practice:
 
@@ -20,7 +48,7 @@ By completing this revision project, you practice:
 - Prime numbers, Armstrong numbers, perfect numbers, GCD, and LCM
 - Leap-year and power-of-number calculations
 
-## Project structure
+## 🗂️ Project structure
 
 ```text
 foundation/
@@ -40,7 +68,7 @@ foundation/
 | `Concepts005_ProblemsMaths` | Mathematical problem-solving | 2 |
 | **Total** |  | **29** |
 
-## Getting started
+## 🚀 Getting started
 
 ### Prerequisites
 
@@ -80,9 +108,9 @@ npx tsc --noEmit --target ES2020 --module commonjs \
 
 Because the exercises are standalone scripts with repeated variable names, type-check them individually rather than compiling every file as one shared program.
 
-## Exercise catalogue
+## 🧩 Exercise catalogue
 
-### 1. Basic TypeScript
+### 🧱 1. Basic TypeScript
 
 #### `Test001-ConsoleOutput.ts`
 
@@ -96,7 +124,7 @@ Prints a message to the console. This is the first exercise for verifying that t
 
 Introduces `var`, `let`, and variable initialization. The comments demonstrate the difference between reading an undeclared variable and declaring a variable without assigning a value.
 
-### 2. Data types
+### 🧬 2. Data types
 
 #### `Test001-NumberAddition.ts`
 
@@ -125,7 +153,7 @@ Demonstrates:
 
 Shows that `+` concatenates a string and a number, while subtraction, multiplication, and division require explicit conversion for type-safe TypeScript code using `Number()`.
 
-### 3. Conditions
+### 🔀 3. Conditions
 
 #### `Test001-CharacterCaseCheck.ts`
 
@@ -163,7 +191,7 @@ Checks whether a character is an uppercase vowel using `||`. This exercise also 
 
 Selects a browser-related message based on a string value and uses `case`, `break`, and `default` branches.
 
-### 4. Loops and iteration
+### 🔁 4. Loops and iteration
 
 #### `Test001-SumOneToTen.ts`
 
@@ -265,7 +293,7 @@ Adds all proper divisors of a number and compares the sum with the original numb
 
 Swaps two numeric variables using addition and subtraction.
 
-### 5. Mathematical problem-solving
+### ➗ 5. Mathematical problem-solving
 
 #### `Test001-LeapYear.ts`
 
@@ -284,7 +312,54 @@ Checks leap years using the standard rules:
 
 Calculates a number raised to a power without using the built-in exponentiation operator.
 
-## Suggested revision order
+## 🗺️ Learning flows
+
+### From fundamentals to problem-solving
+
+```mermaid
+flowchart LR
+    A[🧱 Basic syntax] --> B[🧬 Data types]
+    B --> C[🔀 Conditions]
+    C --> D[🔁 Loops]
+    D --> E[➗ Number algorithms]
+    E --> F[🚀 Stronger TypeScript logic]
+
+    classDef foundation fill:#E8F1FF,stroke:#3178C6,color:#12345B,stroke-width:2px
+    classDef logic fill:#F3E8FF,stroke:#8A2BE2,color:#3B1766,stroke-width:2px
+    classDef loops fill:#E6FFFA,stroke:#00A67E,color:#064E3B,stroke-width:2px
+    classDef result fill:#FFF4CC,stroke:#D97706,color:#78350F,stroke-width:2px
+
+    class A,B foundation
+    class C logic
+    class D,E loops
+    class F result
+```
+
+### How a number exercise works
+
+```mermaid
+flowchart TD
+    S([▶ Start]) --> I[📥 Choose input number]
+    I --> P{🔍 Apply condition or loop}
+    P -->|More digits / values| T[🔁 Transform or inspect value]
+    T --> P
+    P -->|Complete| O[📤 Print result]
+    O --> V{✅ Verify output}
+    V -->|Try another value| I
+    V -->|Correct| E([🏁 End])
+
+    classDef start fill:#DCFCE7,stroke:#16A34A,color:#14532D,stroke-width:2px
+    classDef process fill:#E0F2FE,stroke:#0284C7,color:#0C4A6E,stroke-width:2px
+    classDef decision fill:#FEF3C7,stroke:#D97706,color:#78350F,stroke-width:2px
+    classDef output fill:#FCE7F3,stroke:#DB2777,color:#831843,stroke-width:2px
+
+    class S,E start
+    class I,T process
+    class P,V decision
+    class O output
+```
+
+## ✅ Suggested revision order
 
 For the best learning progression, study the exercises in this order:
 
@@ -304,7 +379,7 @@ For each exercise:
 4. Add a new condition or edge case.
 5. Refactor the solution using a different loop or approach.
 
-## Possible improvements for continued practice
+## 🛠️ Possible improvements for continued practice
 
 - Add explicit types to all variables.
 - Replace loose equality (`==`) with strict equality (`===`).
@@ -315,6 +390,6 @@ For each exercise:
 - Add expected-output examples for every exercise.
 - Improve edge cases for prime numbers, Armstrong numbers, digit counting, GCD/LCM, and number swapping.
 
-## Repository status
+## 📌 Repository status
 
 This repository is a personal TypeScript revision project. The exercises are intentionally focused on learning fundamental syntax and problem-solving rather than production application architecture.
